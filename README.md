@@ -29,7 +29,7 @@ Continuaremos con registrar un **nombre de dominio** en algún proveedor de nomb
 
 Instalar y configurar el **cliente ACME** [Certbot](https://certbot.eff.org/).
 
-Se recomienda visitar la página web oficial de Certbot y utilizar el formulario para indicar el software que vamos a utilizar (Apache, Ngingx, HAProxy, etc.) y el sistema operativo. Una vez que hemos realizado la selección nos aparecerán las instrucciones que tenemos que tenemos que seguir.(Fuente:[José Juan Sánchez](https://josejuansanchez.org/iaw/practica-https/index.html))
+Se recomienda visitar la página web oficial de Certbot y utilizar el formulario para indicar el software que vamos a utilizar (Apache, Ngingx, HAProxy, etc.) y el sistema operativo. Una vez que hemos realizado la selección nos aparecerán las instrucciones que tenemos que tenemos que seguir. (Fuente: [José Juan Sánchez](https://josejuansanchez.org/iaw/practica-https/index.html))
 - Realizamos la instalación y actualización de snapd.
 ```
 sudo snap install core; sudo snap refresh core
