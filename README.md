@@ -27,7 +27,39 @@ Realizaremos la **instalación y configuración de un sitio web**.
 
 Continuaremos con registrar un **nombre de dominio** en algún proveedor de nombres de dominio gratuito, por ejemplo, [Freenom](https://www.freenom.com/es/index.html?lang=es).
 
+Instalar y configurar el **cliente ACME** [Certbot](https://certbot.eff.org/).
+
+Se recomienda visitar la página web oficial de Certbot y utilizar el formulario para indicar el software que vamos a utilizar (Apache, Ngingx, HAProxy, etc.) y el sistema operativo. Una vez que hemos realizado la selección nos aparecerán las instrucciones que tenemos que tenemos que seguir.(Fuente:[José Juan Sánchez](https://josejuansanchez.org/iaw/practica-https/index.html))
+- Realizamos la instalación y actualización de snapd.
+```
+sudo snap install core; sudo snap refresh core
+```
+- Eliminamos si existiese alguna instalación previa de certbot con apt.
+```
+sudo apt-get remove certbot
+```
+- Instalamos el cliente de Certbot con snapd.
+```
+sudo snap install --classic certbot
+```
+- Creamos una alias para el comando certbot.
+```
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+- Obtenemos el certificado y configuramos el servidor web Apache.
+```
+sudo certbot --apache
+```
+- Con el siguiente comando podemos comprobar que hay un temporizador en el sistema encargado de realizar la renovación de los certificados de manera automática.
+```
+systemctl list-timers
+```
+
 ## REFERENCIAS
 - [José Juan Sánchez](https://josejuansanchez.org/iaw/practica-https/index.html)
 - [Freenom](https://www.freenom.com/es/index.html?lang=es)
 - [Wikipedia](https://es.wikipedia.org/wiki/Wikipedia:Portada)
+- [Amazon Web Services](https://aws.amazon.com/es/)
+- [Certbot](https://certbot.eff.org/)
+- [Let´s Encrypt](https://letsencrypt.org/)
+- [WordPress](https://wordpress.org/)
