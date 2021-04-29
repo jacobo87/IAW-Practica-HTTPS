@@ -24,6 +24,7 @@ Está **instancia EC2** deberá tener los puertos abiertos para poder conectarno
 - HTTPS (443/TPC)
 
 Realizaremos la **instalación y configuración de un sitio web**.
+> Para la creación del sitio usaremos las herramientas que tenemos ya disponibles [Jacobo Azmani](https://github.com/jacobo87/IAW-Practica-WPCLI).
 
 Continuaremos con registrar un **nombre de dominio** en algún proveedor de nombres de dominio gratuito, por ejemplo, [Freenom](https://www.freenom.com/es/index.html?lang=es).
 
