@@ -26,7 +26,7 @@ Está **instancia EC2** deberá tener los puertos abiertos para poder conectarno
 Realizaremos la **instalación y configuración de un sitio web**.
 > Para la creación del sitio usaremos las herramientas que tenemos ya disponibles [Jacobo Azmani](https://github.com/jacobo87/IAW-Practica-WPCLI).
 
-Continuaremos con registrar un **nombre de dominio** en algún proveedor de nombres de dominio gratuito, por ejemplo, [Freenom](https://www.freenom.com/es/index.html?lang=es).
+Continuaremos con registrar un **nombre de dominio** en algún proveedor de nombres de dominio gratuito, por ejemplo, [no-ip](https://www.noip.com/).
 ![dominio](./images/dns.png "Dominio")
 
 Instalar y configurar el **cliente ACME** [Certbot](https://certbot.eff.org/).
