@@ -52,12 +52,12 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 ```
 sudo certbot --apache -m demo@demo.es --agree-tos --no-eff-email -d http://azmaniaw.sytes.net/
 ```
-> Al seleccionar estos parámetro automatizamos las respuestas 
-Donde:
-Dirección de correo: -m demo@demo.es
-Aceptamos los términos de uso: --agree-tos
-No queremos compartir nuestro email con la Electronic Frontier Foundation: --no-eff-email
-Dominio: -d http://azmaniaw.sytes.net/ 
+> Al seleccionar estos parámetro automatizamos las respuestas. 
+> Donde: 
+> Dirección de correo: -m demo@demo.es 
+> Aceptamos los términos de uso: --agree-tos 
+> No queremos compartir nuestro email con la Electronic Frontier Foundation: --no-eff-email 
+> Dominio: -d http://azmaniaw.sytes.net/ 
 
 - Con el siguiente comando podemos comprobar que hay un temporizador en el sistema encargado de realizar la renovación de los certificados de manera automática.
 ```
