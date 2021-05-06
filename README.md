@@ -57,12 +57,18 @@ sudo certbot --apache -m demo@demo.es --agree-tos --no-eff-email -d azmaniaw.syt
 >Dirección de correo: -m demo@demo.es 
 >Aceptamos los términos de uso: --agree-tos 
 >No queremos compartir nuestro email con la Electronic Frontier Foundation: --no-eff-email 
->Dominio: -d azmaniaw.sytes.net
+>Dominio: -d azmaniaw.sytes.net 
+
+![Seguro](./images/SSL1.png "Seguro")
 
 - Con el siguiente comando podemos comprobar que hay un temporizador en el sistema encargado de realizar la renovación de los certificados de manera automática.
 ```
 systemctl list-timers
 ```
+
+Tras la instalación podemos acceder al sitio y comprobamos que es seguro
+
+![Seguro](./images/SSL.png "Seguro")
 
 ## REFERENCIAS
 - [José Juan Sánchez](https://josejuansanchez.org/iaw/practica-https/index.html)
