@@ -22,11 +22,11 @@ snap install --classic certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
 
 # Obtenemos el certificado y configuramos el servidor web Apache.
-sudo certbot --apache -m demo@demo.es --agree-tos --no-eff-email -d http://azmaniaw.sytes.net/
+sudo certbot --apache -m demo@demo.es --agree-tos --no-eff-email -d azmaniaw.sytes.net
 # Donde
 # Dirección de correo: -m demo@demo.es
 # Aceptamos los términos de uso: --agree-tos
 # No queremos compartir nuestro email con la Electronic Frontier Foundation: --no-eff-email
-# Dominio: -d http://azmaniaw.sytes.net/
+# Dominio: -d azmaniaw.sytes.net
 
 
